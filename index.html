@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sajad Jawad </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #87CEEB; /* Sky blue */
+            color: #333;
+            overflow: hidden;
+            position: relative;
+        }
+        .cloud {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.8;
+        }
+        .cloud:before, .cloud:after {
+            content: '';
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+        }
+        .cloud1 {
+            width: 100px; height: 40px;
+            top: 20%; left: -100px;
+            animation: moveCloud 25s linear infinite;
+        }
+        .cloud1:before { width: 50px; height: 50px; top: -25px; left: 10px; }
+        .cloud1:after { width: 40px; height: 40px; top: -20px; right: 10px; }
+        .cloud2 {
+            width: 150px; height: 60px;
+            top: 40%; left: -150px;
+            animation: moveCloud 35s linear infinite;
+            animation-delay: 5s;
+        }
+        .cloud2:before { width: 75px; height: 75px; top: -37px; left: 15px; }
+        .cloud2:after { width: 60px; height: 60px; top: -30px; right: 15px; }
+        .cloud3 {
+            width: 80px; height: 30px;
+            top: 60%; left: -80px;
+            animation: moveCloud 30s linear infinite;
+            animation-delay: 10s;
+        }
+        .cloud3:before { width: 40px; height: 40px; top: -20px; left: 8px; }
+        .cloud3:after { width: 30px; height: 30px; top: -15px; right: 8px; }
+        @keyframes moveCloud {
+            from { left: -300px; }
+            to { left: 100%; }
+        }
+        h1 {
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            z-index: 1;
+        }
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            z-index: 1;
+        }
+        .social-links li {
+            margin-bottom: 10px;
+        }
+        .social-links a {
+            display: inline-block;
+            padding: 12px 20px;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .social-links a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .facebook { background-color: #3b5998; }
+        .twitter { background-color: #1da1f2; }
+        .linkedin { background-color: #0077b5; }
+        .instagram { background-color: #e4405f; }
+        .github { background-color: #333; }
+    </style>
+</head>
+<body>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <h1>2025 Happy Year</h1>
+    <ul class="social-links">
+        <li><a href="https://t.me/iinii3" target="_blank" class="facebook">Telegram</a></li>
+        <li><a href="https://www.instagram.com/_lqec/" target="_blank" class="instagram">instagram</a></li>
+    </ul>
+</body>
+</html>
